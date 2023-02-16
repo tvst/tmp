@@ -10,4 +10,4 @@ with st.sidebar:
     num = st.slider("Pick a number")
     
     
-num
+f"# {num}"
