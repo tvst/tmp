@@ -10,4 +10,10 @@ with st.sidebar:
     num = st.slider("Pick a number")
     
     
-f"# {num}"
+a, b = st.columns(2)
+
+with a:
+    f"# {num}"
+
+with b:
+    st.metric("My number", num)
