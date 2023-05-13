@@ -6,14 +6,6 @@ import streamlit as st
 This is an app
 """
 
-with st.sidebar:
-    num = st.slider("Pick a number")
-    
-    
-a, b = st.columns(2)
+num = st.slider("Pick a number")
 
-with a:
-    f"# {num}"
-
-with b:
-    st.metric("My number", num)
+st.metric("My number", num)
